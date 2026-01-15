@@ -23,6 +23,7 @@
             "view_live": "Live Demo",
             "show_more": "Show More",
             "show_less": "Show Less",
+            "disclaimer": "Note: Most projects are deployed on Render, so they may take a few minutes to wake up.",
             "items": {
                 "1": {
                     "title": "Spotify Clone",
@@ -88,6 +89,7 @@
             "view_live": "Demo",
             "show_more": "Ver Más",
             "show_less": "Ver Menos",
+            "disclaimer": "Nota: La mayoría de los proyectos están desplegados en Render, por lo que pueden tardar unos minutos en cargar.",
             "items": {
                 "1": {
                     "title": "Clon de Spotify",

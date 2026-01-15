@@ -28,6 +28,10 @@ const Projects = () => {
                     {t('projects.title')}
                 </h2>
 
+                <p style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--text-color)', opacity: 0.8, fontStyle: 'italic' }}>
+                    {t('projects.disclaimer')}
+                </p>
+
                 <div style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',

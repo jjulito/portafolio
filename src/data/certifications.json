@@ -4,7 +4,7 @@
         "title": "Meta Back-End Developer",
         "issuer": "Coursera",
         "date": "2025",
-        "image": "./public/certs/Meta_BackEnd.jpeg",
+        "image": "certs/Meta_BackEnd.jpeg",
         "link": "https://www.coursera.org/account/accomplishments/professional-cert/9ILBIVM32A74"
     },
     {
@@ -12,7 +12,7 @@
         "title": "Meta Full-Stack Developer",
         "issuer": "Coursera",
         "date": "2025",
-        "image": "./public/certs/Meta_FullStack.jpeg",
+        "image": "certs/Meta_FullStack.jpeg",
         "link": "https://www.coursera.org/account/accomplishments/specialization/MU70PPMCPJX0"
     },
     {
@@ -20,7 +20,7 @@
         "title": "Back-End Developer",
         "issuer": "MBB (Municipio de Bahía Blanca)",
         "date": "2023",
-        "image": "./public/certs/BackEnd_CICM.jpg",
+        "image": "certs/BackEnd_CICM.jpg",
         "link": "https://hub.bahia.gob.ar/"
     },
     {
@@ -28,7 +28,7 @@
         "title": "Front-End Developer",
         "issuer": "MBB (Municipio de Bahía Blanca)",
         "date": "2023",
-        "image": "./public/certs/FrontEnd_CICM.jpg",
+        "image": "certs/FrontEnd_CICM.jpg",
         "link": "https://hub.bahia.gob.ar/"
     },
     {
@@ -36,7 +36,7 @@
         "title": "Artificial Intelligence Fundamentals",
         "issuer": "IBM SkillsBuild",
         "date": "2025",
-        "image": "./public/certs/AI_IBM.png",
+        "image": "certs/AI_IBM.png",
         "link": "https://www.credly.com/badges/2bb2ccbb-6374-44cc-840f-fffd4e5cfe9b"
     },
     {
@@ -44,7 +44,7 @@
         "title": "Python Essentials",
         "issuer": "Cisco",
         "date": "2023",
-        "image": "./public/certs/Python_Cisco.png",
+        "image": "certs/Python_Cisco.png",
         "link": "https://www.credly.com/badges/9b6b0ca7-d1e5-43e1-b0a9-9f8742ac69ba/public_url"
     },
     {
@@ -52,7 +52,7 @@
         "title": "Python and Cursor: Smarter development with AI",
         "issuer": "Santander | Open Academy",
         "date": "2025",
-        "image": "./public/certs/Python_Cursor_Santander.jpg",
+        "image": "certs/Python_Cursor_Santander.jpg",
         "link": "https://www.credly.com/badges/9b6b0ca7-d1e5-43e1-b0a9-9f8742ac69ba/public_urls/9b6b0ca7-d1e5-43e1-b0a9-9f8742ac69ba/public_url",
         "comentario": "OA-2025-1115001967760"
     }
