@@ -1,0 +1,132 @@
+{
+    "en": {
+        "nav": {
+            "brand": "Welcome to my portfolio!",
+            "about": "About me",
+            "projects": "Projects",
+            "resume": "Resume",
+            "contact": "Contact"
+        },
+        "hero": {
+            "greeting": "Hey, they call me",
+            "role": "Full Stack Developer",
+            "cta": "Check my projects"
+        },
+        "about": {
+            "title": "About me",
+            "description": "I consider myself a really creative developer",
+            "bio": "I'm a Systems Engineering student with a strong background in programming, and I excel in software development and data analysis. My quick learning ability, results-oriented approach, and motivation to contribute to technological innovation projects make me a valuable team member for any project."
+        },
+        "projects": {
+            "title": "Projects",
+            "view_code": "Code",
+            "view_live": "Live Demo",
+            "show_more": "Show More",
+            "show_less": "Show Less",
+            "items": {
+                "1": {
+                    "title": "Spotify Clone",
+                    "description": "A modern, responsive Spotify clone built with React, Node.js and Express. This full-stack application replicates core Spotify features including music playback, search functionality, playlist management, and a sleek user interface."
+                },
+                "2": {
+                    "title": "Supermarket Demo",
+                    "description": "A full-stack e-commerce application built with React and Node.js, featuring a custom API hosted on Render that processes data from DummyJSON. It demonstrates the complete development cycle, from backend routing and external API integration to independent deployment on GitHub Pages."
+                },
+                "3": {
+                    "title": "Users CRUD",
+                    "description": "A full-stack user management system featuring a REST API built with Node.js and a modular Vanilla JS frontend. It implements SOLID principles, real-time multi-language support (i18n), and complete CRUD operations."
+                },
+                "4": {
+                    "title": "Go Concurrency Booking",
+                    "description": "A high-performance backend service built in Go that manages massive concurrent ticket reservations using Redis distributed locking and PostgreSQL optimistic locking. It follows a Hexagonal Architecture to ensure atomic transactions and prevent race conditions in high-traffic environments."
+                },
+                "5": {
+                    "title": "Little Lemon Restaurant",
+                    "description": "The backend API for the Little Lemon Restaurant, built with Django and Django REST Framework. It handles menu management, table bookings, and user authentication. NOTE: AI was used to generate the index containing the API endpoints."
+                }
+            }
+        },
+        "skills": {
+            "title": "Tech Stack"
+        },
+        "certifications": {
+            "title": "Certifications",
+            "issued_by": "Issued by",
+            "view_certificate": "View certificate"
+        },
+        "contact": {
+            "title": "Get in touch!",
+            "email_me": "Send me an email",
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "send": "Send Message",
+            "success": "Thanks for joining!"
+        }
+    },
+    "es": {
+        "nav": {
+            "brand": "Bienvenido a mi portafolio!",
+            "about": "Sobre mí",
+            "projects": "Proyectos",
+            "resume": "Currículum",
+            "contact": "Contacto"
+        },
+        "hero": {
+            "greeting": "Hola, soy",
+            "role": "Desarrollador Full Stack",
+            "cta": "Ver mis proyectos"
+        },
+        "about": {
+            "title": "Sobre mí",
+            "description": "Me considero un desarrollador creativo",
+            "bio": "Estudio Ingeniería en Sistemas, tengo una sólida formación en programación y me destaco por mi interés en desarrollo de software y análisis de datos. Mi rapidez de aprendizaje, orientación a resultados y motivación por aportar en proyectos de innovación tecnológica me hacen un buen compañero para cualquier proyecto."
+        },
+        "projects": {
+            "title": "Proyectos",
+            "view_code": "Código",
+            "view_live": "Demo",
+            "show_more": "Ver Más",
+            "show_less": "Ver Menos",
+            "items": {
+                "1": {
+                    "title": "Clon de Spotify",
+                    "description": "Un clon moderno y responsivo de Spotify construido con React, TypeScript y Node.js. Esta aplicación full-stack replica funciones principales como reproducción de música, búsqueda y gestión de listas."
+                },
+                "2": {
+                    "title": "Supermercado",
+                    "description": "Aplicación de e-commerce full-stack desarrollada con React y Node.js, que utiliza una API propia alojada en Render para gestionar datos de DummyJSON. El proyecto destaca la integración de servicios externos y el despliegue independiente de frontend y backend en GitHub Pages"
+                },
+                "3": {
+                    "title": "CRUD de Usuarios",
+                    "description": "Un sistema de gestión de usuarios full-stack con una API REST en Node.js y un frontend modular en Vanilla JS. Implementa principios SOLID, soporte multiidioma en tiempo real (i18n) y operaciones CRUD completas"
+                },
+                "4": {
+                    "title": "Reserva concurrente en Go",
+                    "description": "Un servicio backend de alto rendimiento desarrollado en Go que gestiona reservas masivas concurrentes mediante bloqueos distribuidos en Redis y bloqueo optimista en PostgreSQL. Implementa una Arquitectura Hexagonal para asegurar transacciones atómicas y prevenir condiciones de carrera en entornos de alto tráfico."
+                },
+                "5": {
+                    "title": "Little Lemon Restaurant",
+                    "description": "La API backend para Little Lemon Restaurant, construida con Django y Django REST Framework. Gestiona la gestión del menú, reservas de mesas y autenticación de usuarios. NOTA: Se utilizó IA para generar el índice que contiene los endpoints de la API."
+                }
+            }
+        },
+        "skills": {
+            "title": "Tecnologías"
+        },
+        "certifications": {
+            "title": "Certificaciones",
+            "issued_by": "Emitido por",
+            "view_certificate": "Ver certificado"
+        },
+        "contact": {
+            "title": "Contactame!",
+            "email_me": "Enviame un correo",
+            "name": "Nombre",
+            "email": "Correo",
+            "message": "Mensaje",
+            "send": "Enviar Mensaje",
+            "success": "¡Gracias por contactarme!"
+        }
+    }
+}

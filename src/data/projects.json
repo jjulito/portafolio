@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "Spotify Clone",
+        "description": "A modern, responsive Spotify clone built with React, Node.js and Express. This full-stack application replicates core Spotify features including music playback, search functionality, playlist management, and a sleek user interface.",
+        "image": "./projects/project1.png",
+        "tech": [
+            "React",
+            "TypeScript",
+            "Node.js",
+            "Express.js"
+        ],
+        "github": "https://github.com/jjulito/spotify_clone",
+        "live": "https://jjulito.github.io/spotify_clone/#/"
+    },
+    {
+        "id": 2,
+        "title": "Supermarket Demo",
+        "description": "A full-stack e-commerce application built with React and Node.js, featuring a custom API hosted on Render that processes data from DummyJSON. It demonstrates the complete development cycle, from backend routing and external API integration to independent deployment on GitHub Pages.",
+        "image": "./projects/project2.png",
+        "tech": [
+            "React",
+            "Node.js",
+            "Express.js"
+        ],
+        "github": "https://github.com/jjulito/supermercado",
+        "live": "https://jjulito.github.io/supermercado/#/"
+    },
+    {
+        "id": 3,
+        "title": "Users CRUD",
+        "description": "A full-stack user management system featuring a REST API built with Node.js and a modular Vanilla JS frontend. It implements SOLID principles, real-time multi-language support (i18n), and complete CRUD operations.",
+        "image": "./projects/project3.png",
+        "tech": [
+            "Node.js",
+            "Express.js",
+            "JavaScript"
+        ],
+        "github": "https://github.com/jjulito/crud-usuarios",
+        "live": "https://jjulito.github.io/crud-usuarios/#/"
+    },
+    {
+        "id": 4,
+        "title": "Go Concurrency Booking",
+        "description": "A high-performance backend service built in Go that manages massive concurrent ticket reservations using Redis distributed locking and PostgreSQL optimistic locking. It follows a Hexagonal Architecture to ensure atomic transactions and prevent race conditions in high-traffic environments.",
+        "image": "./projects/project4.png",
+        "tech": [
+            "Go",
+            "Docker",
+            "PostgreSQL"
+        ],
+        "github": "https://github.com/jjulito/go-concurrency-booking"
+    },
+    {
+        "id": 5,
+        "title": "Little Lemon Restaurant",
+        "description": "The backend API for the Little Lemon Restaurant, built with Django and Django REST Framework. It handles menu management, table bookings, and user authentication. NOTE: AI was used to generate the index containing the API endpoints.",
+        "image": "./projects/project5.png",
+        "tech": [
+            "Python",
+            "Django",
+            "Django REST Framework",
+            "MySQL",
+            "Djoser"
+        ],
+        "github": "https://github.com/jjulito/LittleLemon---Meta-BackEnd-Developer-Capstone-"
+    }
+]

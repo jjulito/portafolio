@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "title": "Meta Back-End Developer",
+        "issuer": "Coursera",
+        "date": "2025",
+        "image": "./public/certs/Meta_BackEnd.jpeg",
+        "link": "https://www.coursera.org/account/accomplishments/professional-cert/9ILBIVM32A74"
+    },
+    {
+        "id": 2,
+        "title": "Meta Full-Stack Developer",
+        "issuer": "Coursera",
+        "date": "2025",
+        "image": "./public/certs/Meta_FullStack.jpeg",
+        "link": "https://www.coursera.org/account/accomplishments/specialization/MU70PPMCPJX0"
+    },
+    {
+        "id": 3,
+        "title": "Back-End Developer",
+        "issuer": "MBB (Municipio de Bahía Blanca)",
+        "date": "2023",
+        "image": "./public/certs/BackEnd_CICM.jpg",
+        "link": "https://hub.bahia.gob.ar/"
+    },
+    {
+        "id": 4,
+        "title": "Front-End Developer",
+        "issuer": "MBB (Municipio de Bahía Blanca)",
+        "date": "2023",
+        "image": "./public/certs/FrontEnd_CICM.jpg",
+        "link": "https://hub.bahia.gob.ar/"
+    },
+    {
+        "id": 5,
+        "title": "Artificial Intelligence Fundamentals",
+        "issuer": "IBM SkillsBuild",
+        "date": "2025",
+        "image": "./public/certs/AI_IBM.png",
+        "link": "https://www.credly.com/badges/2bb2ccbb-6374-44cc-840f-fffd4e5cfe9b"
+    },
+    {
+        "id": 6,
+        "title": "Python Essentials",
+        "issuer": "Cisco",
+        "date": "2023",
+        "image": "./public/certs/Python_Cisco.png",
+        "link": "https://www.credly.com/badges/9b6b0ca7-d1e5-43e1-b0a9-9f8742ac69ba/public_url"
+    },
+    {
+        "id": 7,
+        "title": "Python and Cursor: Smarter development with AI",
+        "issuer": "Santander | Open Academy",
+        "date": "2025",
+        "image": "./public/certs/Python_Cursor_Santander.jpg",
+        "link": "https://www.credly.com/badges/9b6b0ca7-d1e5-43e1-b0a9-9f8742ac69ba/public_urls/9b6b0ca7-d1e5-43e1-b0a9-9f8742ac69ba/public_url",
+        "comentario": "OA-2025-1115001967760"
+    }
+]
