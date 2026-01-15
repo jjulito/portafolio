@@ -22,9 +22,9 @@ const Projects = () => {
     };
 
     return (
-        <section id="projects" style={{ padding: '4rem 0' }}>
+        <section id="projects" className="section-padding">
             <div className="container">
-                <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', textAlign: 'center', color: 'var(--primary-color)' }}>
+                <h2 className="section-title">
                     {t('projects.title')}
                 </h2>
 

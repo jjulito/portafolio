@@ -23,22 +23,20 @@ const Contact = () => {
     }
 
     return (
-        <section id="contact" style={{ padding: '4rem 0', textAlign: 'center' }}>
+        <section id="contact" className="section-padding" style={{ textAlign: 'center' }}>
             <div className="container">
-                <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', color: 'var(--primary-color)' }}>
+                <h2 className="section-title">
                     {t('contact.title')}
                 </h2>
 
                 <motion.div
-                    className="glass"
+                    className="glass glass-panel"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     style={{
                         maxWidth: '600px',
-                        margin: '0 auto',
-                        padding: '3rem',
-                        borderRadius: '20px'
+                        margin: '0 auto'
                     }}
                 >
                     <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>

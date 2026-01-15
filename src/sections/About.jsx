@@ -6,7 +6,7 @@ const About = () => {
     const { t } = useLanguage();
 
     return (
-        <section id="about" style={{ padding: '6rem 0' }}>
+        <section id="about" className="section-padding">
             <div className="container">
                 <div style={{
                     display: 'flex',
@@ -20,19 +20,17 @@ const About = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
-                        style={{ fontSize: '2.5rem', marginBottom: '2rem', color: 'var(--primary-color)' }}
+                        className="section-title"
                     >
                         {t('about.title')}
                     </motion.h2>
 
                     <motion.div
-                        className="glass"
+                        className="glass glass-panel"
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                         style={{
-                            padding: '3rem',
-                            borderRadius: '20px',
                             fontSize: '1.1rem',
                             lineHeight: '1.8',
                             color: 'var(--text-color)'

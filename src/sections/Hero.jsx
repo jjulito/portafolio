@@ -20,7 +20,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    style={{ fontSize: '2rem', marginBottom: '1rem', color: 'var(--primary-color)' }}
+                    className="hero-greeting"
                 >
                     {t('hero.greeting')}
                 </motion.h2>
@@ -28,7 +28,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    style={{ fontSize: '4rem', marginBottom: '1.5rem', background: 'linear-gradient(to right, var(--primary-color), var(--secondary-color))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+                    className="hero-title"
                 >
                     Julián
                 </motion.h1>
@@ -36,7 +36,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    style={{ fontSize: '1.5rem', marginBottom: '2rem', color: 'var(--secondary-color)' }}
+                    className="hero-role"
                 >
                     {t('hero.role')}
                 </motion.h3>

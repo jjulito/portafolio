@@ -32,9 +32,9 @@ const Skills = () => {
     ];
 
     return (
-        <section style={{ padding: '4rem 0', overflow: 'hidden' }}>
+        <section className="section-padding" style={{ overflow: 'hidden' }}>
             <div className="container">
-                <h2 style={{ fontSize: '2.5rem', marginBottom: '3rem', textAlign: 'center', color: 'var(--primary-color)' }}>
+                <h2 className="section-title">
                     {t('skills.title')}
                 </h2>
             </div>

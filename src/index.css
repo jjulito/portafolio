@@ -133,3 +133,71 @@ button {
   background: none;
   font-family: inherit;
 }
+
+/* Responsive Utilities */
+.section-padding {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.glass-panel {
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.hero-greeting {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-role {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .glass-panel {
+    padding: 1.5rem;
+  }
+
+  .hero-greeting {
+    font-size: 1.5rem !important;
+  }
+
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
+
+  .hero-role {
+    font-size: 1.2rem !important;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+}
