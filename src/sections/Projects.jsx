@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaTimes, FaExclamationTriangle } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import projectsData from '../data/projects.json';
 
@@ -31,6 +31,32 @@ const Projects = () => {
                 <p style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--text-color)', opacity: 0.8, fontStyle: 'italic' }}>
                     {t('projects.disclaimer')}
                 </p>
+
+                <div style={{
+                    maxWidth: '800px',
+                    margin: '0 auto 3rem auto',
+                    padding: '1.5rem',
+                    borderRadius: '10px',
+                    border: '1px solid var(--primary-color)',
+                    background: 'rgba(0, 0, 0, 0.2)', // Using a safe dark transparent background as fallback
+                    textAlign: 'center',
+                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                }}>
+                    <h4 style={{
+                        color: 'var(--primary-color)',
+                        marginBottom: '0.5rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '0.5rem',
+                        fontSize: '1.2rem'
+                    }}>
+                        <FaExclamationTriangle /> {t('projects.important_note_title')}
+                    </h4>
+                    <p style={{ color: 'var(--text-color)', fontSize: '0.95rem', lineHeight: '1.6' }}>
+                        {t('projects.important_note_body')}
+                    </p>
+                </div>
 
                 <div style={{
                     display: 'grid',

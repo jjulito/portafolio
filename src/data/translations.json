@@ -24,6 +24,8 @@
             "show_more": "Show More",
             "show_less": "Show Less",
             "disclaimer": "Note: Most projects are deployed on Render, so they may take a few minutes to wake up.",
+            "important_note_title": "Important Note",
+            "important_note_body": "I am using the Render free tier and services are not running because I exceeded the usage hours limit. It should normalize next month. To test the code, it needs to be hosted locally or contact me to perform the tests.",
             "items": {
                 "1": {
                     "title": "Spotify Clone",
@@ -90,6 +92,8 @@
             "show_more": "Ver Más",
             "show_less": "Ver Menos",
             "disclaimer": "Nota: La mayoría de los proyectos están desplegados en Render, por lo que pueden tardar unos minutos en cargar.",
+            "important_note_title": "Nota Importante",
+            "important_note_body": "Estoy utilizando el free tier de Render y no están corriendo los servicios porque excedí el límite de horas de uso. Debería normalizarse el próximo mes. Para probar el código es necesario hostearlo localmente o contactarme para hacer las pruebas.",
             "items": {
                 "1": {
                     "title": "Clon de Spotify",
