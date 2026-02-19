@@ -33,32 +33,6 @@ const Projects = () => {
                 </p>
 
                 <div style={{
-                    maxWidth: '800px',
-                    margin: '0 auto 3rem auto',
-                    padding: '1.5rem',
-                    borderRadius: '10px',
-                    border: '1px solid var(--primary-color)',
-                    background: 'rgba(0, 0, 0, 0.2)', // Using a safe dark transparent background as fallback
-                    textAlign: 'center',
-                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-                }}>
-                    <h4 style={{
-                        color: 'var(--primary-color)',
-                        marginBottom: '0.5rem',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        gap: '0.5rem',
-                        fontSize: '1.2rem'
-                    }}>
-                        <FaExclamationTriangle /> {t('projects.important_note_title')}
-                    </h4>
-                    <p style={{ color: 'var(--text-color)', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                        {t('projects.important_note_body')}
-                    </p>
-                </div>
-
-                <div style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
                     gap: '2rem'
