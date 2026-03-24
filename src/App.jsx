@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ThemeProvider } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
@@ -35,12 +35,24 @@ const pageVariants = {
 
 const AppContent = () => {
     const { activeSection, navCollapsed } = useNavigation();
+    const mainRef = useRef(null);
     const ActiveSection = sectionMap[activeSection];
+
+    useEffect(() => {
+        const mainEl = mainRef.current;
+
+        if (!mainEl) {
+            return;
+        }
+
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        mainEl.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+    }, [activeSection]);
 
     return (
         <div className={`app-layout${navCollapsed ? ' nav-collapsed' : ''}`}>
             <LeftNav />
-            <main className="app-main">
+            <main ref={mainRef} className="app-main">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={activeSection}
