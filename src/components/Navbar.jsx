@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
 import { FaBars, FaTimes, FaMoon, FaSun, FaGlobe } from 'react-icons/fa';
 import { useTheme } from '../context/ThemeContext';
@@ -8,10 +8,10 @@ import '../index.css';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
-    const lastScrollY = React.useRef(0);
+    const lastScrollY = useRef(0);
     const { theme, toggleTheme } = useTheme();
     const { language, switchLanguage, t } = useLanguage();
-    const isLayoutUpdating = React.useRef(false);
+    const isLayoutUpdating = useRef(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -81,7 +81,6 @@ const Navbar = () => {
                     {t('nav.brand')}
                 </div>
 
-                {/* Desktop Menu */}
                 <div className="desktop-menu" style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
                     {navLinks.map((link) => (
                         link.type === 'scroll' ? (
@@ -122,7 +121,6 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                {/* Mobile Menu Toggle */}
                 <div className="mobile-toggle" style={{ display: 'none' }}>
                     <button onClick={toggleMenu} style={{ fontSize: '1.5rem', color: 'var(--text-color)' }}>
                         {isOpen ? <FaTimes /> : <FaBars />}
@@ -130,7 +128,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu */}
             {isOpen && (
                 <div className="glass" style={{
                     position: 'absolute',

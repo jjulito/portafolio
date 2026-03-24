@@ -5,17 +5,25 @@
             "about": "About me",
             "projects": "Projects",
             "resume": "Resume",
-            "contact": "Contact"
+            "skills": "Skills",
+            "certifications": "Certifications",
+            "contact": "Contact",
+            "rights": "Julito💻. All rights reserved"
         },
         "hero": {
             "greeting": "Hey, they call me",
-            "role": "Full Stack Developer",
+            "role": "Software Developer",
             "cta": "Check my projects"
         },
         "about": {
             "title": "About me",
-            "description": "I consider myself a really creative developer",
-            "bio": "I'm a Systems Engineering student with a strong background in programming, and I excel in software development and data analysis. My quick learning ability, results-oriented approach, and motivation to contribute to technological innovation projects make me a valuable team member for any project."
+            "description": "Full Stack Developer · Information Systems Engineering student @ UNS · Thyroidea Founder",
+            "roles": {
+                "full_stack": "Full Stack Developer",
+                "student": "Information Systems Engineering student @ UNS",
+                "founder": "Thyroidea Founder"
+            },
+            "bio": "I'm a self-taught builder and Information Systems Engineering student at Universidad Nacional del Sur, Argentina. I don't just write code, I ship products. Thyroidea, my thyroid health tracker, went from idea to a fully deployed SaaS with real payments, Azure AI integration, and a PWA in a few months. I gravitate toward backend-heavy problems, system design, and building things that actually solve something."
         },
         "projects": {
             "title": "Projects",
@@ -71,7 +79,10 @@
             "about": "Sobre mí",
             "projects": "Proyectos",
             "resume": "Currículum",
-            "contact": "Contacto"
+            "skills": "Tecnologías",
+            "certifications": "Certificaciones",
+            "contact": "Contacto",
+            "rights": "Julito💻. Todos los derechos reservados"
         },
         "hero": {
             "greeting": "Hola, soy",
@@ -80,8 +91,13 @@
         },
         "about": {
             "title": "Sobre mí",
-            "description": "Me considero un desarrollador creativo",
-            "bio": "Estudio Ingeniería en Sistemas, tengo una sólida formación en programación y me destaco por mi interés en desarrollo de software y análisis de datos. Mi rapidez de aprendizaje, orientación a resultados y motivación por aportar en proyectos de innovación tecnológica me hacen un buen compañero para cualquier proyecto."
+            "description": "Desarrollador Full Stack · Estudiante de Ingeniería en Sistemas de Información · Fundador de Thyroidea",
+            "roles": {
+                "full_stack": "Desarrollador Full Stack",
+                "student": "Estudiante de Ingeniería en Sistemas de Información @ UNS",
+                "founder": "Fundador de Thyroidea"
+            },
+            "bio": "Soy un desarrollador y estudiante de Ingeniería en Sistemas de Información en la Universidad Nacional del Sur, Argentina. No solo escribo código, lanzo productos. Thyroidea, mi aplicación de seguimiento tiroideo, pasó de idea a SaaS desplegado con pagos reales, integración con Azure AI y PWA en pocos meses. Me inclino hacia problemas de backend, diseño de sistemas y construir cosas que realmente resuelvan algo."
         },
         "projects": {
             "title": "Proyectos",
