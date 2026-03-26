@@ -235,7 +235,7 @@ const Projects = () => {
                                                 <div className="featured-project-timeline">
                                                     {project.highlights.map((highlight, stepIndex) => (
                                                         <div key={highlight} className="featured-project-step">
-                                                            <span className="featured-project-step-index">0{stepIndex + 1}</span>
+                                                            <span className="featured-project-step-index">{stepIndex + 1}</span>
                                                             <p><ScrambleText text={highlight} duration={340} steps={9} /></p>
                                                         </div>
                                                     ))}
