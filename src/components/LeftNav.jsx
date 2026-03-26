@@ -92,7 +92,7 @@ const LeftNav = () => {
                     ))}
                     <li>
                         <a
-                            href={`${import.meta.env.BASE_URL}projects/resume.pdf`}
+                            href={`${import.meta.env.BASE_URL}projects/Octavio_Mosqueda.pdf`}
                             download
                             className="left-nav-btn"
                             title={navCollapsed ? t('nav.resume') : undefined}
