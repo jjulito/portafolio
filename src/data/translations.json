@@ -27,11 +27,67 @@
         },
         "projects": {
             "title": "Projects",
+            "featured_subtitle": "Featured projects",
             "view_code": "Code",
             "view_live": "Live Demo",
+            "visit_site": "Visit website",
             "show_more": "Show More",
             "show_less": "Show Less",
+            "previous_image": "Previous image",
+            "next_image": "Next image",
+            "toggle_details": "View details",
+            "toggle_summary": "Hide details",
+            "other_projects_title": "Other projects",
             "disclaimer": "Note: Most projects are deployed on Render, so they may take a few minutes to wake up.",
+            "featured_label": "Flagship project",
+            "tools_label": "Tools used",
+            "why_label": "Why this code",
+            "how_label": "How it works",
+            "timeline_label": "What it solves",
+            "featured": {
+                "thyroidea": {
+                    "title": "Thyroidea",
+                    "description": "Full-stack medical SaaS with clinical diagnostic engine, OCR pipeline with Azure AI, server-scheduled push notifications, and complete billing cycle with verified webhooks.",
+                    "tools": [
+                        "React",
+                        "Node.js",
+                        "Express.js",
+                        "Supabase (RLS + pg_cron)",
+                        "Lemon Squeezy",
+                        "PWA",
+                        "Azure Document Intelligence",
+                        "Web Push API",
+                        "i18next (ES/EN)"
+                    ],
+                    "why": "The architecture solves three concrete risks: clinical security (every route verifies requireAuth + requirePremium at startup and fails hard if missing), data integrity (medication operations implement manual rollback with previous snapshot on error), and robust billing (Lemon Squeezy webhook resolves premium state from 3 cascading sources). The thyroid diagnostic engine adjusts TSH ranges by pregnancy trimester, reflecting real clinical guidelines.",
+                    "how": "The backend uses a dual-access pattern: non-sensitive data is queried from React directly against Supabase (with Row Level Security), while premium operations go through Express API with validated JWT and RBAC. A server scheduler runs every 60 seconds and dispatches push notifications with atomic deduplication. PDF/image uploads pass through Azure Document Intelligence to extract up to 9 clinical markers with automatic unit conversion (pmol/L → ng/dL).",
+                    "highlights": [
+                        "Real medical OCR pipeline - Azure Document Intelligence extracts TSH, FT4, FT3, Anti-TPO and 5+ markers from real lab PDFs, with automatic unit conversion",
+                        "Clinical diagnostic engine - 5 evaluation layers with TSH ranges adjusted by pregnancy trimester, based on endocrinological guidelines",
+                        "Push scheduler with deduplication - medication and appointment notifications dispatched server-side with configurable retry logic and HIPAA-oriented audit log (6-year retention via pg_cron)",
+                        "Complete billing cycle - checkout, HMAC-SHA256 verified webhook, 3 plan types (monthly/annual/lifetime), automatic cancellation on account deletion",
+                        "Structural startup security - verifyRouteSecurityPolicies() introspects Express router on startup and throws fatal error if any route lacks protection"
+                    ]
+                },
+                "go_concurrency_booking": {
+                    "title": "Go Concurrency Booking",
+                    "description": "A high-performance reservation backend designed to handle intense concurrent traffic without inventory overselling. Prioritizes correctness under pressure, deterministic locking behavior, and predictable data integrity.",
+                    "tools": [
+                        "Go",
+                        "Redis",
+                        "PostgreSQL",
+                        "Docker",
+                        "Hexagonal Architecture"
+                    ],
+                    "why": "Built to guarantee data integrity under real concurrent load. Combines distributed locking with optimistic locking to eliminate race conditions without sacrificing throughput or service boundaries.",
+                    "how": "Each reservation request flows through an application service that coordinates lock acquisition, validations, and atomic writes. Redis manages short-lived contention control, PostgreSQL ensures eventual consistency, and the hexagonal architecture decouples domain logic from infrastructure.",
+                    "highlights": [
+                        "Race condition prevention in concurrent bookings via distributed Redis locking",
+                        "Optimistic locking in PostgreSQL to prevent overselling",
+                        "Hexagonal architecture with ports and adapters for maximum testability and loose coupling"
+                    ]
+                }
+            },
             "items": {
                 "1": {
                     "title": "Spotify Clone",
@@ -101,13 +157,69 @@
         },
         "projects": {
             "title": "Proyectos",
+            "featured_subtitle": "Proyectos destacados",
             "view_code": "Código",
             "view_live": "Demo",
+            "visit_site": "Visitar sitio",
             "show_more": "Ver Más",
             "show_less": "Ver Menos",
+            "previous_image": "Imagen anterior",
+            "next_image": "Imagen siguiente",
+            "toggle_details": "Ver detalles",
+            "toggle_summary": "Ocultar detalles",
+            "other_projects_title": "Otros proyectos",
             "disclaimer": "Nota: La mayoría de los proyectos están desplegados en Render, por lo que pueden tardar unos minutos en cargar.",
+            "featured_label": "Proyecto principal",
+            "tools_label": "Herramientas utilizadas",
+            "why_label": "Por qué este código",
+            "how_label": "¿Cómo funciona?",
+            "timeline_label": "¿Qué resuelve?",
             "important_note_title": "Nota Importante",
             "important_note_body": "Estoy utilizando el free tier de Render y no están corriendo los servicios porque excedí el límite de horas de uso. Debería normalizarse el próximo mes. Para probar el código es necesario hostearlo localmente o contactarme para hacer las pruebas.",
+            "featured": {
+                "thyroidea": {
+                    "title": "Thyroidea",
+                    "description": "SaaS médico full-stack con motor de diagnóstico clínico, pipeline OCR con Azure AI, notificaciones push programadas en servidor y ciclo de facturación completo con webhooks verificados.",
+                    "tools": [
+                        "React",
+                        "Node.js",
+                        "Express.js",
+                        "Supabase (RLS + pg_cron)",
+                        "Lemon Squeezy",
+                        "PWA",
+                        "Azure Document Intelligence",
+                        "Web Push API",
+                        "i18next (ES/EN)"
+                    ],
+                    "why": "La arquitectura resuelve tres riesgos concretos: seguridad clínica (cada ruta verifica requireAuth + requirePremium en tiempo de arranque y falla duro si falta), integridad de datos (las operaciones sobre medicamentos implementan rollback manual con snapshot previo al error), y facturación robusta (el webhook de Lemon Squeezy resuelve el estado premium desde 3 fuentes en cascada). El motor de diagnóstico tiroideo ajusta rangos de TSH por trimestre de embarazo, lo que refleja guías clínicas reales.",
+                    "how": "El backend usa un patrón de acceso dual: los datos no sensibles se consultan desde React directamente contra Supabase (con Row Level Security), mientras que las operaciones premium pasan por el API Express con JWT validado y RBAC. Un scheduler en servidor corre cada 60 segundos y despacha notificaciones push con deduplicación atómica. Los uploads de PDF/imagen pasan por Azure Document Intelligence para extraer hasta 9 marcadores clínicos con conversión automática de unidades (pmol/L → ng/dL).",
+                    "highlights": [
+                        "Pipeline OCR médico real - Azure Document Intelligence extrae TSH, FT4, FT3, Anti-TPO y 5 marcadores más desde PDFs de laboratorio reales, con conversión de unidades",
+                        "Motor de diagnóstico clínico - 5 capas de evaluación con rangos ajustados por trimestre de embarazo, basados en guías endocrinológicas",
+                        "Scheduler de push con deduplicación - notificaciones de medicamentos y citas dispatched server-side con lógica de repetición configurable y audit log HIPAA-oriented (retención 6 años vía pg_cron)",
+                        "Ciclo de billing completo - checkout, webhook HMAC-SHA256 verificado, 3 tipos de plan (mensual/anual/lifetime), cancelación automática al borrar cuenta",
+                        "Seguridad estructural en arranque - verifyRouteSecurityPolicies() introspecciona el router de Express al iniciar y lanza error fatal si cualquier ruta queda sin protección"
+                    ]
+                },
+                "go_concurrency_booking": {
+                    "title": "Go Concurrency Booking",
+                    "description": "Un backend de reservas de alto rendimiento diseñado para soportar tráfico concurrente intenso sin sobreventa de inventario. Prioriza corrección bajo presión, comportamiento de locking determinista e integridad de datos predecible.",
+                    "tools": [
+                        "Go",
+                        "Redis",
+                        "PostgreSQL",
+                        "Docker",
+                        "Arquitectura Hexagonal"
+                    ],
+                    "why": "Diseñado para garantizar integridad bajo carga concurrente real. Combina distributed locking con optimistic locking para eliminar race conditions sin sacrificar throughput ni los límites del servicio.",
+                    "how": "Cada solicitud de reserva pasa por un servicio de aplicación que coordina adquisición de locks, validaciones y escrituras atómicas. Redis controla la contención de corta duración, PostgreSQL garantiza consistencia final y la arquitectura hexagonal desacopla el dominio de la infraestructura.",
+                    "highlights": [
+                        "Prevención de race conditions en reservas simultáneas mediante distributed locking en Redis",
+                        "Locking optimista en PostgreSQL para evitar sobreventa",
+                        "Arquitectura hexagonal con puertos y adaptadores para máxima testabilidad y bajo acoplamiento"
+                    ]
+                }
+            },
             "items": {
                 "1": {
                     "title": "Clon de Spotify",
