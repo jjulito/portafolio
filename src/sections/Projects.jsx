@@ -43,6 +43,17 @@ const Projects = () => {
             tools: t('projects.featured.thyroidea.tools')
         },
         {
+            key: 'devagent',
+            images: ['projects/devagent.png'],
+            github: 'https://github.com/jjulito/DevAgent',
+            title: t('projects.featured.devagent.title'),
+            description: t('projects.featured.devagent.description'),
+            why: t('projects.featured.devagent.why'),
+            how: t('projects.featured.devagent.how'),
+            highlights: t('projects.featured.devagent.highlights'),
+            tools: t('projects.featured.devagent.tools')
+        },
+        {
             key: 'go_concurrency_booking',
             images: ['projects/project4.png'],
             github: 'https://github.com/jjulito/go-concurrency-booking',

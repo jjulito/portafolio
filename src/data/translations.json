@@ -86,6 +86,25 @@
                         "Optimistic locking in PostgreSQL to prevent overselling",
                         "Hexagonal architecture with ports and adapters for maximum testability and loose coupling"
                     ]
+                },
+                "devagent": {
+                    "title": "DevAgent CLI",
+                    "description": "An AI-powered command-line tool built in Go for software development assistance. It features semantic code search using RAG (Retrieval-Augmented Generation), automatic Git commit reviews, and a Model Context Protocol (MCP) server.",
+                    "tools": [
+                        "Go",
+                        "RAG",
+                        "Qdrant (Vector DB)",
+                        "MCP Protocol",
+                        "LLMs (BYOK/Ollama)"
+                    ],
+                    "why": "Developed to integrate LLM capabilities directly into the local development workflow without vendor lock-in. By supporting BYOK and local models (Ollama), it ensures privacy and flexibility for code analysis.",
+                    "how": "The CLI interacts with the local Git working tree to review changes, uses Qdrant via Docker to index project files for semantic search, and exposes tools to other agents through its built-in MCP server.",
+                    "highlights": [
+                        "Semantic codebase search using RAG and Qdrant vector database",
+                        "Model Context Protocol (MCP) server integration for external agents",
+                        "Automatic Git commit and diff reviews with context awareness",
+                        "BYOK architecture with support for local models (Ollama) and multiple providers"
+                    ]
                 }
             },
             "items": {
@@ -217,6 +236,25 @@
                         "Prevención de race conditions en reservas simultáneas mediante distributed locking en Redis",
                         "Locking optimista en PostgreSQL para evitar sobreventa",
                         "Arquitectura hexagonal con puertos y adaptadores para máxima testabilidad y bajo acoplamiento"
+                    ]
+                },
+                "devagent": {
+                    "title": "DevAgent CLI",
+                    "description": "Herramienta de línea de comandos (CLI) en Go para asistencia en el desarrollo de software mediante Inteligencia Artificial. Cuenta con búsqueda semántica usando RAG, revisiones automáticas de commits de Git y un servidor Model Context Protocol (MCP).",
+                    "tools": [
+                        "Go",
+                        "RAG",
+                        "Qdrant (Vector DB)",
+                        "Protocolo MCP",
+                        "LLMs (BYOK/Ollama)"
+                    ],
+                    "why": "Desarrollado para integrar las capacidades de los LLMs directamente en el flujo de trabajo local sin depender de un solo proveedor (vendor lock-in). Al soportar BYOK y modelos locales (Ollama), garantiza total privacidad en el análisis de código.",
+                    "how": "El CLI interactúa con el árbol de trabajo local de Git para revisar cambios, utiliza Qdrant mediante Docker para indexar archivos y realizar búsquedas semánticas, y expone herramientas a otros agentes a través de su servidor MCP nativo.",
+                    "highlights": [
+                        "Búsqueda semántica en repositorios usando RAG y Qdrant como base de datos vectorial",
+                        "Integración de servidor Model Context Protocol (MCP) para uso por agentes externos",
+                        "Revisiones automáticas de commits y diffs de Git con conocimiento del contexto",
+                        "Arquitectura BYOK con soporte para modelos locales (Ollama) y múltiples proveedores"
                     ]
                 }
             },
